@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Error 404" />
+		<title>Page not found - Duly Noted All-Male A Cappella - RPI Troy, NY</title>
+		<base href="http://dulynoted.union.rpi.edu/" />
+		<link rel="search" type="application/opensearchdescription+xml" title="Duly Noted" href="search.xml" />
+		<link href="atom/index.php" type="application/atom+xml" rel="alternate" title="Duly Noted A Cappella Feed" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src=".jquery.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="container">
+			
+			<!-- Duly Noted Logo -->
+			<div class="logo">
+				<form action="http://www.google.com/cse" id="cse-search-box">
+					<div>						<input type="hidden" name="cx" value="007666655940800514940:wq3trtrcbca" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="text" name="q" size="31" style="width:225px; border: 3px double black;" />
+						<input type="image" src="/images/icons/search.png" name="sa" style="vertical-align:middle; margin-left:10px;" />
+					</div>
+				</form>
+				<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box"></script>
+			</div>
+			
+			<!-- Navigation Menu -->
+			<div class="nav_bar">
+				<a href="/index.php">Home</a>
+				<a href="/about.php">About Us</a>
+				<a href="/members.php">Members</a>
+				<a href="/events.php">Events</a>
+				<a href="/repertoire.php">Repertoire</a>
+				<a href="/discography.php">Discography</a>
+				<a href="/auditions.php">Auditions</a>
+				<a href="/contact.php">Contact</a>
+				<a href="/links.php">Links</a>
+				<a href="/sitemap.php">Sitemap</a>
+			</div>
+			
+			<!-- Main Content of Page -->
+			<div class="canvas">
+				
+				<h1>Page not found</h1>
+				<p class="centered">
+					We're sorry! The page you're looking for is not available.<br />
+					Please visit our <a href="index.php">Homepage</a>, or use the search engine above to find what you're looking for.
+				</p>
+				
+			</div>
+			
+			<!-- Bottom Navigation Tray -->
+			<div class="tray">
+				<address>
+					Duly Noted A Cappella,
+					The Rensselaer Union,
+					110 8th Street,
+					Troy, New York 12180-3599
+				</address>
+			</div>
+			
+			<!-- Footnotes -->
+			<p class="footnote">
+				<a href="http://validator.w3.org/check?uri=referer">Valid XHTML 1.1</a> |
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS 2.1</a> |
+				<a href="http://validator.w3.org/feed/check.cgi?url=http%3A//dulynoted.union.rpi.edu/atom/index.php">Valid Atom 1.0</a> |
+				<a href="http://severinghaus.org/projects/icv/?url=http%3A%2F%2Fdulynoted.union.rpi.edu%2Fevents.ics">Valid iCal 2.0</a>
+			</p>
+			<p class="footnote">
+				<a href="http://www.facebook.com/pages/Duly-Noted-All-Male-A-Cappella/98532953439">Facebook</a> |
+				<a href="http://www.myspace.com/dulynotedrpi">MySpace</a> |
+				<a href="http://www.youtube.com/user/DulyNotedRPI">YouTube</a> |
+				<a href="http://www.last.fm/music/duly+noted">Last.fm</a> |
+				<a href="http://twitter.com/DulyNotedRPI">Twitter</a> |
+				<a href="http://friendfeed.com/dulynotedrpi">Friend Feed</a> |
+				<a href="http://www.flickr.com/photos/dulynotedrpi/show/">Flickr</a> |
+				<a href="http://www.linkedin.com/groups?gid=1799564">LinkedIn</a> |
+				<a href="http://www.ilike.com/artist/Duly+Noted">iLike</a> |
+				<a href="http://www.bebo.com/DulyNotedRPI">Bebo</a>
+			</p>
+			<p class="footnote">
+				<span style="font-size: 80%;">
+					The Duly Noted All-Male A Cappella Website, Designed and Maintained by <a href="members.php?id=1">Adam Steinberger</a>.<br />
+					Creative Commons <a href="http://creativecommons.org/licenses/by-sa/3.0/">Attribution-Share Alike 3.0</a> License January 2009.<br />
+				</span>
+			</p>
+			<p class="footnote">
+				<a href="/atom/index.php">Atom Feed</a> |
+				<a href="/ical/index.php">iCalendar</a> |
+				<a href="/vcard/index.php">vCard</a>
+			</p>
+		
+		</div>
+	</body>
+
+</html>

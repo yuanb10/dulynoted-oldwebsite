@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Global Style Sheet */
+@media screen, print, tty, handheld {
+	
+	/* Page Styles */
+	.float_left {
+		float: left;
+		margin: 0px 20px 15px 0px;
+	}
+	
+	.float_right {
+		float: right;
+		margin: 0px 0px 20px 15px;
+	}
+	
+	.note {
+		float: left;
+		font-size: 85%;
+		margin-top: 5px;
+	}
+	
+	label { font-weight: bold }
+	
+	img, table { border: none }
+	
+	.centered, h1, h2, h3, h4, h5, h6 { text-align: center }
+	
+	
+	/* Footnotes */
+	.footnote {
+		display: block;
+		font-size: 85%;
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	.footnote, .footnote a { color: white }
+	
+	
+	/* Member Photos */
+	.headshot {
+		clear: both;
+		float: left;
+		width: 100px;
+		margin: 5px 10px 5px 0px;
+	}
+	
+	.headshot_small {
+		float: left;
+		width: 50px;
+		margin: 5px 10px 5px 0px;
+	}
+	
+	
+	/* Icon Gallery */
+	.gallery {
+		width: 770px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	
+	.gallery div {
+		float: left;
+		width: 110px;
+		margin: 0px auto;
+		font-size: 75%;
+	}
+	
+	
+	/* Chart Format */
+	.shaded_table, .dynamic_table, .shaded_div {
+		width: 770px;
+		border-top: 1px gray solid;
+		border-right: 2px gray solid;
+		border-left: 1px gray solid;
+	}
+	
+	.shaded_div > div { padding: 5px 10px 5px 10px }
+	
+	#logs > div { font-size: 80% }
+	
+	.tracks {
+		text-align: center;
+		width: 495px;
+	}
+	
+	.albumart { width: 250px; }
+	
+	
+	/* Change Password Box */
+	fieldset.loginbox label {
+		float: left;
+		clear: right;
+	}
+	
+	
+	/* Members Area Forms */
+	.input_box, .input_box_thin, .input_box_varsize {
+		float: left;
+		text-align: left;
+		margin: 0px 50px 25px 0px;
+	}
+	
+	.input_box { width: 200px }
+	
+	.input_box_thin { width: 140px }
+	
+	
+	/* Schedules */
+	.rehearsal { background-color: blue }
+	
+	.busy { background-color: red }
+	
+	.conflict { background-color: purple }
+	
+	.rehearsal:hover { background-color: green }
+	
+	.busy:hover { background-color: orange }
+	
+	.conflict:hover { background-color: #8B4513 }
+	
+	.free:hover, .busy1:hover, .busy2:hover, .busy3:hover, .busy4:hover, .busy5:hover, .busy6:hover, .busy7:hover, .busy8:hover, .busy9:hover, .busy10:hover, .busy11:hover, .busy12:hover, .busy13:hover, .busy14:hover, .busy15:hover, .busy16:hover, .busy17:hover, .busy18:hover, .busy19:hover, .busy20:hover, .busy21:hover, .busy22:hover, .busy23:hover, .busy24:hover, .busy25:hover, .busy26:hover, .busy27:hover, .busy28:hover, .busy29:hover, .busy30:hover { background-color: yellow }
+	
+	.busy1 { background-color: #ffe8e8 }
+	
+	.busy2 { background-color: #ffe0e0 }
+	
+	.busy3 { background-color: #ffd8d8 }
+	
+	.busy4 { background-color: #ffd0d0 }
+	
+	.busy5 { background-color: #ffc8c8 }
+	
+	.busy6 { background-color: #ffc0c0 }
+	
+	.busy7 { background-color: #ffb8b8 }
+	
+	.busy8 { background-color: #ffb0b0 }
+	
+	.busy9 { background-color: #ffa8a8 }
+	
+	.busy10 { background-color: #ffa0a0 }
+	
+	.busy11 { background-color: #ff9898 }
+	
+	.busy12 { background-color: #ff9090 }
+	
+	.busy13 { background-color: #ff8888 }
+	
+	.busy14 { background-color: #ff8080 }
+	
+	.busy15 { background-color: #ff7878 }
+	
+	.busy16 { background-color: #ff7070 }
+	
+	.busy17 { background-color: #ff6868 }
+	
+	.busy18 { background-color: #ff6060 }
+	
+	.busy19 { background-color: #ff5858 }
+	
+	.busy20 { background-color: #ff5050 }
+	
+	.busy21 { background-color: #ff4848 }
+	
+	.busy22 { background-color: #ff4040 }
+	
+	.busy23 { background-color: #ff3838 }
+	
+	.busy24 { background-color: #ff3030 }
+	
+	.busy25 { background-color: #ff2828 }
+	
+	.busy26 { background-color: #ff2020 }
+	
+	.busy27 { background-color: #ff1818 }
+	
+	.busy28 { background-color: #ff1010 }
+	
+	.busy29 { background-color: #ff0808 }
+	
+	.busy30 { background-color: #ff0000 }
+	
+	
+	/* Boxed Page Numbers */
+	.boxed {
+		padding-left: 2px;
+		padding-right: 2px;
+		border-left: 1px solid gray;
+		border-top: 1px solid gray;
+		border-right: 3px solid gray;
+		border-bottom: 3px solid gray;
+		font-size: 85%;
+	}
+	
+	.boxed a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	.boxed a:visited { color: black }
+	
+	
+}
+
+
+/* Screen Style Sheet */
+@media screen, tty {
+	
+	/* Page Styles */
+	body {
+		background-color: black;
+		font-family: Verdana;
+		font-size: 12pt;
+		text-align: center;
+	}
+	
+	abbr, acronym {
+		cursor: help;
+		border-bottom: black dotted thin;
+	}
+	
+	.container {
+		margin: 0px auto;
+		width: 800px;
+	}
+	
+	h1 { font-size: 14pt }
+	
+	h2 { font-size: 12pt }
+	
+	h3 { font-size: 10pt }
+	
+	input:focus, select:focus, textarea:focus { background: yellow }
+	
+	
+	/* Duly Noted Logo */
+	.logo {
+		background: url('images/duly_noted_logo.png');		background-repeat: no-repeat;
+		width: 800px;
+		height: 175px;
+	}
+	
+	#cse-search-box {
+		float: right;
+		width: 280px;
+		position: relative;
+		top: 150px;
+		margin-right: 5px;
+		background-color: #d0d0d0;
+	}
+	
+	
+	/* Navigation Bar */
+	.nav_bar {
+		display: block;
+		background-color: #d0d0d0;
+		width: 800px;
+		margin: 10px 0px 10px 0px;
+		padding: 5px 0px 5px 0px;
+		font-size: 85%;
+	}
+	
+	.nav_bar a {
+		color: black;
+		text-decoration: none;
+		font-weight: bold;
+		margin: 0px 4px 0px 4px;
+	}
+	
+	.nav_bar a:hover { color: blue }
+	
+	
+	/* Drop-Down Menu */
+	ul.menu {
+		display: block;
+		float: left;
+		width: 764px;
+		padding: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 1px solid black;
+	}
+	
+	ul.menu li {
+		list-style: none;
+		padding: 4px;
+		cursor: pointer;
+	}
+	
+	ul.menu > li {
+		float: left;
+		margin-right: 10px;
+		padding: 2px;
+	}
+	
+	ul.menu li ul {
+		visibility: hidden;
+		position: absolute;
+		z-index: 2;
+	}
+	
+	ul.menu li:hover > ul {
+		visibility: visible;
+		display: block;
+		border-top: 1px solid black;
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		background: white;
+		position: absolute;
+		z-index: 2;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	ul.menu a {
+		text-decoration: none;
+		color: blue;
+	}
+	
+	ul.menu > li > ul > li { border-bottom: 1px solid black }
+	
+	
+	/* Main Content Box */
+	.canvas_clear {
+		width: 800px;
+		background-color: black;
+		float: left;
+		position: relative;
+		display: block;
+	}
+	
+	.canvas, .canvas_left, .canvas_right {
+		display: block;
+		background-color: white;
+		text-align: justify;
+		padding: 15px;
+		line-height: 150%;
+	}
+	
+	.canvas_left {
+		float: left;
+		width: 540px;
+	}
+	
+	.canvas_right {
+		float: right;
+		width: 190px;
+		margin-left: 10px;
+		font-size: 75%;
+	}
+	
+	.canvas { width: 770px }
+	
+	.recent_news { text-align: left }
+	
+	
+	/* Chart Format */
+	.shaded_table, .dynamic_table, .shaded_div { border-bottom: 2px gray solid }
+	
+	
+	/* Information Tray */
+	.tray {
+		background-color: #c0c0c0;
+		float: left;
+		width: 800px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		font-size: 85%;
+		font-weight: bold;
+	}
+	
+	
+	/* Change Password Box */
+	fieldset.loginbox { width: 350px }
+	
+	
+	/* Upload Form */
+	.upload {
+		width: 300px;
+		display: block;
+		margin: 0px auto;
+	}
+	
+	
+	/* Icons & Images */
+	.icon_small, .icon, .icon_big { margin: 0px 0px 0px 5px }
+	
+	.icon_small {
+		width: 24px;
+		height: 24px;
+		margin: 0px auto;
+	}
+	
+	.icon { width: 50px; }
+	
+	.icon_big { width: 100px; }
+	
+	
+	/* Rounded Corners */
+	b.niftycorners * {
+		display: block;
+		height: 1px;
+		line-height: 1px;
+		font-size: 1px;
+		overflow: hidden;
+		border-style: solid;
+		border-width: 0 1px;
+	}
+	
+	b.tb7 {
+		border-width: 0 2px;
+		height:2px
+	}
+	
+	b.tb8 {
+		border-width: 0 1px;
+		height:2px
+	}
+	
+	b.niftycorners, b.niftyfill { display: block }
+	
+	b.t1 { border-width: 0 5px }
+	
+	b.t2 { border-width: 0 3px }
+	
+	b.t3 { border-width: 0 2px }
+	
+	b.t4 { height: 2px }
+	
+	b.tb1 { border-width: 0 10px }
+	
+	b.tb2 { border-width: 0 8px }
+	
+	b.tb3 { border-width: 0 6px }
+	
+	b.tb4 { border-width: 0 5px }
+	
+	b.tb5 { border-width: 0 4px }
+	
+	b.tb6 { border-width: 0 3px }
+	
+	b.ts1 { border-width: 0 2px }
+	
+}
+
+
+/* Print Style Sheet */
+@media print {
+	
+	/* Page Styles */
+	body {
+		background-color: white;
+		font-family: Times;
+		font-size: 14pt;
+		text-align: justify;
+	}
+	
+	h1 { font-size: 20pt }
+	
+	h2 { font-size: 18pt }
+	
+	abbr, acronym { border-color: white }
+	
+	
+	/* Chart Format */
+	.shaded_table td, .shaded_table th, .dynamic_table td, .dynamic_table th { border-bottom: gray solid thin }
+	
+	
+	/* Hide Useless Elements */
+	.logo, .nav_bar, .menu, .canvas_right , .tray, .loginbox, .upload_pic {
+		display: none;
+		visibility: hidden;
+		height: 0px;
+	}
+	
+}

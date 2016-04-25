@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>Duly Noted</ShortName>
+	<Description>Search the Duly Noted A Cappella website</Description>
+	<Tags>duly noted a cappella rpi troy ny</Tags>
+	<Contact>DulyNotedRPI@gmail.com</Contact>
+	<Url type="text/html" method="GET" template="http://www.google.com/cse?cx=007666655940800514940%3Awq3trtrcbca&amp;ie=UTF-8&amp;q={searchTerms}&amp;sa.x=0&amp;sa.y=0&amp;siteurl=dulynoted.union.rpi.edu%2Findex.php"></Url>
+	<LongName>Duly Noted A Cappella Search Engine</LongName>
+	<Image width="16" height="16" type="image/x-icon">http://dulynoted.union.rpi.edu/favicon.ico</Image>
+	<Query role="example" searchTerms="show" />
+	<Developer>Duly Noted A Cappella</Developer>
+	<Attribution>Creative Commons Attribution-Share Alike 3.0 License</Attribution>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>en-us</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>http://dulynoted.union.rpi.edu/</moz:SearchForm>
+</OpenSearchDescription>
+

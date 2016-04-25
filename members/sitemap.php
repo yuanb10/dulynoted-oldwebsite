@@ -1,0 +1,89 @@
+<?php /* Enable GZIP Compression */ include "/home/dulynote/public_html/members/includes/gzip_compress.php"; ?>
+<?php /* Connect to MySQL Database on the PHP server */ session_start(); include "connect.php"; ?>
+<?php /* Get Canvas Elements */ $canvas = mysql_fetch_array(mysql_query("SELECT logo, navbar, tray FROM canvas WHERE id=1")); ?>
+<?php /* Authorize Member and Verify if Logged-In */ include "auth.php"; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Find Your Way Around The Members Area - Duly Noted All-Male A Cappella - RPI Troy, NY</title>
+		<base href="http://dulynoted.union.rpi.edu/" />
+		<link rel="search" type="application/opensearchdescription+xml" title="Duly Noted" href="search.xml" />
+		<link href="atom/index.php" type="application/atom+xml" rel="alternate" title="Duly Noted A Cappella Feed" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src=".jquery.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<!-- Duly Noted Logo -->
+			<?php echo $canvas['logo'] . "\r"; ?>
+			
+			<!-- Navigation Menu -->
+			<?php echo $canvas['navbar'] . "\r"; ?>
+			
+			<!-- Main Content of Page -->
+			<div class="canvas">
+				
+				<?php /* Display Members Area Navigation Menu */ include "menu.php"; ?>
+				<h1>A Map of the Members Area</h1>
+				<div class="shaded_div">
+					<?php
+					
+					// Change Working Directory to Members Area
+					chdir($current_directory);
+					
+					// Search for PHP pages in Members Area
+					$pages = glob("*.php");
+					$size = count($pages);
+					
+					// Search each page for details
+					for ($index = 0; $index < $size; $index++) {
+						
+						// Open Webpage
+						$webpage = $pages[$index];
+						$title = strtoupper(strtok($webpage,"."));
+						$handle = fopen($webpage, "rb");
+						
+						// Read Contents of Webpage
+						$contents = '';
+						while (!feof($handle)) $contents .= fread($handle, 8192);
+						
+						// Close Webpage
+						fclose($handle);
+						
+						// Search Contents for Title tags
+						preg_match_all('/\<title\>.*?\<\/title\>/', $contents, $matches);
+				?><div>
+						<big><a href="members/<?php /* url */ echo $webpage; ?>"><?php /* page */ echo $title; ?></a></big>
+						- <?php /* title tags */ foreach ($matches as $tag) echo substr($tag[0], 7, strlen($tag[0]) - 63); ?>
+					</div>
+					<?php }
+					
+					// Change Working Directory back to Includes
+					chdir('/home/dulynote/public_html/members/includes/');
+					echo "\r";
+					
+					?>
+				</div>
+				
+			</div>
+			
+			<!-- Bottom Navigation Tray -->
+			<?php echo $canvas['tray'] . "\r"; ?>
+			
+			<!-- Footnotes -->
+			<?php include "footnotes.php"; ?>
+		
+		</div>
+	</body>
+	
+</html>
+<?php /* Close connection to the MySQL Database */ mysql_close($connection); ?>

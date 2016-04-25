@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /.archive
+Disallow: /members
+Disallow: /groups.php
+Disallow: /contacts.vcard
+Allow: /members.php

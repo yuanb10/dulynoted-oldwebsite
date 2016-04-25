@@ -1,0 +1,1 @@
+<?php /* Validate Contents of given Array */ function validate($array) { for ($index = 0; $index < count($array); $index++) if (empty($array[$index])) header ("location: http://dulynoted.union.rpi.edu/members/includes/error.php?error=You left one or more input fields blank!"); } ?>
